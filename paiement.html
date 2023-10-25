@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la dernière collection d'accessoires féminins. Du bijou scintillant aux sacs chics, trouvez le complément parfait à votre tenue. Shoppez et exprimez votre style">
+    <title>YouShope</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+      
+</head>
+<body> 
+    <section>
+        <nav class="header" >
+            <div class="header__menuhome">           
+                <i class="fa-solid fa-bars" id="header__menuhome__ouvrir" style="color: #000000;"></i>
+                <i class="fa-solid fa-square-xmark" id="header__menuhome__fermer" style="color: #000000;"></i>
+            </div>
+            <a href="#" class="header__logo" aria-label="ouvrez">You<span>Shope</a>
+            <div class="header__menu">
+                <ul>
+                    <li><a href="#" aria-label="ouvrez">Shop</a></li>
+                    <li><a href="#" aria-label="ouvrez">Blog</a></li>
+                    <li><a href="#" aria-label="ouvrez">Our Story</a></li>
+                    <div class="header__menu__icons">
+                        <li>|</li>
+                        <li><a href="#" aria-label="ouvrez"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+                        <li><a href="paniers.html" aria-label="ouvrez"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-user" style="color: #000000;"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <main role="main">
+        <form  class="paiement" name="Forms" onsubmit="return paiment()">
+            <label for="E-mail">Coordonnées</label>
+            <div class="paiement__email">
+                <input type="Email" size="60" name="Email" id="E-mail" placeholder="Adress-email">
+            </div>
+            <label for="type--paiment">Moyen de paiement</label>
+            <div class="paiement__cart">
+                <a href="#" aria-label="ouvrez"><i class="fa-solid fa-credit-card" style="color: #000000;"></i>carte</a>
+                <a href="#" aria-label="ouvrez"><i class="fa-solid fa-money-check-dollar" style="color: #000000;"></i>Cash App Pay</a>
+                <a href="#" aria-label="ouvrez"><i class="fa-solid fa-building-columns" style="color: #000000;"></i>Compte bancaire</a>
+            </div>
+            <label for="donnez--Cart">Informations de la carte</label> 
+            <div class="paiement__virment">
+                <input type="text" name="NumeroCart" id="donnez--Cart" placeholder="1234 1234 1234 1234 ">
+                <div class="paiement__virment__Cash">
+                    <input type="text" name="Date" placeholder="MM/AA">
+                    <input type="text" name="cvc" placeholder="CVC">
+                </div>
+            </div>
+            <label for="NomCart">Nom du titulaire de la carte</label>
+            <div class="paiement__nomCompte">
+                <input type="text" name="NomCart" id="NomCart"   placeholder="nom compte">                
+            </div>
+            <label for="NomCart">Pays ou région</label>
+            <div class="paiement__pays">
+                <select name="pays">
+                    <option value="Maroc" selected="selected">Maroc </option>
+                    <option value="Algerie">Algerie </option>
+                    <option value="Arabie_Saoudite">Arabie_Saoudite </option>                       
+                    <option value="Egypte">Egypte </option>
+                    <option value="France">France </option>
+                    <option value="Hongrie">Hongrie </option>
+                    <option value="Indonesie">Indonesie </option>
+                    <option value="Iran">Iran </option>
+                    <option value="Iraq">Iraq </option>
+                    <option value="Italie">italie </option>
+                    <option value="Qatar">Qatar </option>
+                </select>
+            </div>
+            <input type="submit" value="Envoyer" name="Envoyer" />            
+        </form>
+    </main>
+
+    <footer >
+        <div class="footer">
+        <div class="footer__lign1">
+            <ul>
+                <li><a href="#" aria-label="ouvrez">CONTACT</a></li>
+                <li><a href="#" aria-label="ouvrez">TERMS OF SERVICES</a></li>
+                <li><a href="#" aria-label="ouvrez">SHIPPING AND RETURNS</a></li>
+            </ul>
+        </div>
+        <div class="footer__lign2">
+                <ul>
+                    <li><a href="#" aria-label="ouvrez">Give an email, get the newsletter.</a></li>
+                    <li><i class="fa-solid fa-arrow-right" style="color: #000000;"></i></li>
+                </ul>
+        </div>
+        </div>
+        <div class="footer__icons">
+            <a href="#" aria-label="ouvrez"><i class="fa-brands fa-linkedin-in" style="color: #707070;"></i></a>
+            <a href="#" aria-label="ouvrez"><i class="fa-brands fa-facebook-f" style="color: #707070;"></i></a>
+            <a href="#" aria-label="ouvrez"><i class="fa-brands fa-instagram" style="color: #707070;"></i></a>
+            <a href="#" aria-label="ouvrez"><i class="fa-brands fa-twitter" style="color: #707070;"></i></a>
+        </div>
+    
+    </footer>
+    
+</body>
+<script src="index.js"></script>
+</html>
