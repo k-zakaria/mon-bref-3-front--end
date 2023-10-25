@@ -6,3 +6,15 @@ const menuhome = document.querySelector('.header__menuhome');
     nav.classList.toggle('opne');
 
  });    
+
+ //---------------------------------supprission--------------------------------------
+
+let btnRemove = document.querySelectorAll(".cart_close");
+
+btnRemove.forEach((btnRemove) => {
+   btnRemove.addEventListener("click" , removeCart);
+});
+
+function removeCart(){
+   this.parentElement.remove();
+}
